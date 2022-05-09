@@ -1,0 +1,164 @@
+.principal {
+    min-height: 75vh;
+}
+
+.logo {
+    height: 5rem;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-none {
+    display: none;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+#entrada {
+    text-align: center;
+    font-size: 3rem;
+    max-width: 100%;
+    margin: 2rem;
+    color: #0A3871;
+    border: solid 4px #0A3871;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.controles {
+    padding: 1.5rem;
+}
+
+header {
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+}
+
+.advertencia {
+    height: 2rem;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: #0A3871;
+    font-weight: bold;
+}
+
+input.button {
+    color: #0A3871;
+    font-weight: bold;
+    border: solid 3px #0A3871;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin: 0.5rem 0px;
+    cursor: pointer;
+}
+
+input.button:hover,
+input.button:focus {
+    background-color: #0A3871;
+    color: #000;
+    border: solid 4px #000;
+}
+
+.barra-lateral {
+    border: solid 4px #0A3871;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    min-height: calc(25vh - 2rem);
+    color: #000;
+    
+}
+
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.info {
+    text-align: center;
+    color: #0A3871;
+}
+
+.icon-info {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    background: url('./images/exclamation.png');
+    margin: 0px 0.5rem;
+}
+
+.info-txt strong{
+    color: #0A3871;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.barra-lateral {
+    position: relative;
+}
+
+.barra-lateral .button {
+    position: absolute;
+    visibility: hidden;
+    top: 0.5rem;
+    right: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.barra-lateral.con-salida .button {
+    visibility: visible;
+}
+
+.barra-lateral.con-salida .info {
+    display:  none;
+}
+
+#salida {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    max-width: 100%;
+    word-break: break-all;
+    overflow-y: auto;
+    color: #0A3871;
+}
+
+/*Tablet*/
+
+    @media only screen and (min-width: 375px) {
+        .d-sm-flex {
+        display:  flex;
+    }
+
+    .flex-sm-column {
+        flex-direction: column;
+    }
+
+    .flex-sm-row {
+        flex-direction: row;
+    }
+
+    .flex-sm-grow {
+        flex-grow: 1;
+    }
+
+    input.button {
+        border-radius: 1rem;
+        margin: 0px 1rem;
+    }
+}
